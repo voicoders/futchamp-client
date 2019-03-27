@@ -1,0 +1,33 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:#fdfdfd;
+}
+
+@font-face {
+	font-family: slabOne;
+	src: url(../fonts/AlfaSlabOne-Regular.ttf);
+  }
+
+  .f-f-slabone {
+	  font-family: slabOne;
+  }
+
+section.call-to-action {
+
+}
+
+section.call-to-action header {
+	padding-top: 8rem;
+	margin: auto;
+}
+
+section.call-to-action h1 {
+}
+
+section.call-to-action header p.display-4 {
+	font-size: 3rem;
+}
