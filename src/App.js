@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap';
+import { Container, Navbar, Nav } from 'react-bootstrap';
+import { NavLink, Route } from 'react-router-dom';
+import Home from './scenes/Home';
+import Login from './scenes/Login';
 import './App.css';
 
 class App extends Component {
@@ -8,28 +11,25 @@ class App extends Component {
 			<>
 				<Navbar bg="dark" variant="dark" >
 					<Container>
-						<Navbar.Brand>FutChamp</Navbar.Brand>
-						<Nav className="justify-content-end">
+						<Nav.Item>
+							<NavLink to="/">FutChamp</NavLink>
+						</Nav.Item>
+						<Nav className="justify-content-end" variant="pills">
 							<Nav.Item>
-								<Nav.Link>
+								<NavLink className="nav-link" to="/login">
 									Log in
-								</Nav.Link>
+								</NavLink>
 							</Nav.Item>
 							<Nav.Item>
-								<Nav.Link>
+								<NavLink className="nav-link" to="/login">
 									Sign in
-								</Nav.Link>
+								</NavLink>
 							</Nav.Item>
 						</Nav>
 					</Container>
 				</Navbar>
-				<Container>
-					<Row>
-						<Col className="text-center">
-							Welcome to the Futchamp app!
-						</Col>
-					</Row>
-				</Container>
+				<Route path="/login" component={Login} />
+				<Route exact path="/home" component={Home} />
 			</>
 		);
 	}
