@@ -6,6 +6,7 @@ import App from './App';
 import store from './services/store';
 import * as serviceWorker from './serviceWorker';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const routing = (
 	<Provider store={store}>

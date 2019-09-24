@@ -1,36 +1,22 @@
-// Place your settings in this file to overwrite default and user settings.
 {
 	"editor.insertSpaces": false,
-	"editor.detectIndentation": true,
-
+	"editor.detectIndentation": false,
 	"files.trimTrailingWhitespace": true,
-
 	"eslint.enable": true,
-
-	"npm.includeDirectories": [
-		"src/bower_components/Tools_Common",
-		"src/bower_components/Tools_Build",
-		"src/bower_components/Tools_JsDoc"
-	],
-
 	"files.exclude": {
-		"**/bower_components": false,
 		"**/.idea": true,
 		"**/.vscode": false,
 		"**/.*ignore": false,
-		"**/.eslintrc": true,
+		"**/.eslintrc": false,
 		"**/*.log": true,
-		"**/node_modules": true,
+		"**/node_modules": false,
 		"**/stage/": true,
 		"**/temp/": true,
 		"**/dest*": true,
 		"**/*.map": true,
-
 		"**/_tempStuff_": true
 	},
-
 	"search.exclude": {
-		"**/bower_components": false,
 		"**/.idea": true,
 		"**/.vscode": true,
 		"**/.*ignore": true,
@@ -41,10 +27,8 @@
 		"**/temp/": true,
 		"**/dest*": true,
 		"**/*.map": true,
-
 		"**/_tempStuff_": true
 	},
-
 	"javascript.validate.enable": false,
 	"javascript.format.insertSpaceAfterCommaDelimiter": true,
 	"javascript.format.insertSpaceAfterSemicolonInForStatements": true,

@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.3.1",
     "mocha": "^6.2.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
@@ -38,6 +39,7 @@
     "react-redux": "^7.1.0",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
+    "react-toolbox": "^2.0.0-beta.13",
     "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
     "redux-promise-middleware": "^6.1.1",
