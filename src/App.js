@@ -11,9 +11,11 @@ class App extends Component {
 			<>
 				<Navbar bg="dark" variant="dark" >
 					<Container>
-						<Nav.Item>
-							<NavLink to="/">FutChamp</NavLink>
-						</Nav.Item>
+						<Nav>
+							<Nav.Item>
+								<NavLink className="nav-link" to="/">FutChamp</NavLink>
+							</Nav.Item>
+						</Nav>
 						<Nav className="justify-content-end" variant="pills">
 							<Nav.Item>
 								<NavLink className="nav-link" to="/login">
@@ -28,8 +30,10 @@ class App extends Component {
 						</Nav>
 					</Container>
 				</Navbar>
-				<Route path="/login" component={Login} />
-				<Route exact path="/home" component={Home} />
+				<Container fluid>
+					<Route exact path="/home" component={Home} />
+					<Route path="/login" component={Login} />
+				</Container>
 			</>
 		);
 	}

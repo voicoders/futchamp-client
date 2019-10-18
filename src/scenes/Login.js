@@ -1,12 +1,16 @@
 import React from 'react';
-
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 class Login extends React.Component {
 	render() {
 		return (
-			<div>
-				this is the login page
-			</div>
+			<Container>
+				<Row>
+					<Col>
+						Login Page
+					</Col>
+				</Row>
+			</Container>
 		);
 	}
 }
